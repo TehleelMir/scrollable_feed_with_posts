@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PostDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="80dp"
+            android:id="@+id/avatarD"
+            android:layout_gravity="center_vertical"
+            tools:src="@drawable/avatar"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+            android:layout_height="80dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/nameD"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                tools:text="Tehleel Mir"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/userNameD"
+                tools:text="/@tehleelmir64"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="40dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:id="@+id/captionD"
+        tools:text="sdfdsjlkj sdlfkjdslflksdjf lsdfjdsljflsdjf lsjflksdjfljsljfd slfjldsjflksdjf sdlsjflkdsjf sdlfk slfjsdljfksdl"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/imageD"
+        tools:src="@drawable/post"
+        android:layout_weight="1"/>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/dateD"
+            tools:text="23-3-21"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_alignParentStart="true"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_alignTop="@id/commentsD"
+            android:id="@+id/commentsImage"
+            android:src="@drawable/ic_baseline_comment_24"
+            android:layout_alignParentEnd="true"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/commentsD"
+            android:textSize="20sp"
+            tools:text="3"
+            android:layout_toStartOf="@id/commentsImage"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
