@@ -6,4 +6,4 @@ twitter and instagram through a recyclerView list
 There is no api connect to the app, all the data is in the file DummyData.kt 
 
 
-![alt text](fiel path goes herere)
+//![alt text](fiel path goes herere)
